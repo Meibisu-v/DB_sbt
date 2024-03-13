@@ -25,9 +25,11 @@ ps -e | grep 'mongod'
 ![alt text](img/image-4.png)
 
 ### Выполнение CRUD запросов
+
 Вставка и проверка наличия нового элемента в бд
 ![alt text](img/image_2024-03-12_13-11-01.png)
 ![alt text](img/image_2024-03-12_13-17-55.png)
+
 Update запрос и проверка результатов
 ![alt text](img/image_2024-03-12_13-19-29.png)
 Delete запрос и проверка, что элемент удален.
@@ -45,10 +47,13 @@ Delete запрос и проверка, что элемент удален.
 
 Т.к. датасет титаника оказался слишком маленьким для наглядных результатов по времени выполнения запроса я скачала [Fake News Detection Dataset](https://www.kaggle.com/c/fake-news/data)
 ![alt text](img/image.png)
+
 Производительность при find запросе без индексов
 ![alt text](img/image-1.png)
+
 Создаем индекс по полю "label" и снова делаем find запрос:
 ![alt text](img/image-2.png)
+
 Производительность при find запросе с индексами
 ![alt text](img/image-3.png)
 
