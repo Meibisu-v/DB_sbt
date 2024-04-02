@@ -18,15 +18,12 @@ keys = redis.keys('*')
 for key in keys:
     type = redis.type(key)
     if type == "string":
-        print("error")
         val = redis.get(key)
     if type == "hash":
         vals = redis.hgetall(key)
     if type == "zset":
-        print("error")
         vals = redis.zrange(key, 0, -1)
     if type == "list":
-        print("error")
         vals = redis.lrange(key, 0, -1)
         
 
